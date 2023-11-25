@@ -1,10 +1,18 @@
-.cabecalho_menu-hamburquer {
+.cabecalho_menu-hamburguer {
     width: 24px;
     height: 24px;
     background-image: url("../img/Menu.svg");
     background-repeat: no-repeat;
     background-position: center;
     display: inline-block;
+}
+
+.container_botao:checked ~ .container_rotulo > .cabecalho_menu-hamburguer {
+    background-image: url("../img/Menu-Aberto.svg");
+}
+
+.container_botao:checked~.container_rotulo {
+    background: var(--azul-degrade);
 }
 
 .cabecalho {
@@ -18,7 +26,6 @@
 .container {
     display: flex;
     align-items: center;
-
 }
 
 .container_imagem {
